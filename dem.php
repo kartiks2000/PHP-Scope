@@ -6,21 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Scope in PHP</h1>
+    <h1>Vairiables and constants in PHP</h1>
     <?php    
 
-        $x = 'outside';
+        // Vairiables
+
+        $x = 20;
         echo $x . "<br>";
 
-        function fun(){
-            global $x;
-            $x = 'inside';
-            echo 'inside the function  ' . $x . "<br>";
-        }
-        
-        fun();
+        $x = 100;
         echo $x . "<br>";
+
+
+        // Constant
         
+        define("y",80);
+        echo y . "<br>";
     ?>
 </body>
 </html>
